@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #3475ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+.banner .content
+{
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.banner.content h1
+{
+  font-size: 100px;
+}
+
+.banner.content p
+{
+  font-size: 18px;
+}
+
+.banner header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+.banner header .logo
+{
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.banner header .toggle
+{
+  position: relative;
+  width: 36px;
+  height: 28px;
+  background: url(toggle.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.banner header .search-box 
+{    
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    width: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+  }
+
+  .banner input::placeholder
+  {
+    color: #fff;
+    opacity: 0.5;
+  }
+
+  .banner .search-box:focus 
+  {
+    width: 600px;
+    border-color: #3f8ffc;
+  }
+
+.about
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.about .contentBx
+{
+  background: #3f8ffc;
+  padding: 100px;
+  width: 50%;
+  color: #ffffff;
+}
+
+.heading
+{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.text
+{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.about .imgBx
+{
+  background: url(bg2.jpeg);
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.services
+{
+  background: #12222d;
+  padding: 100px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.services .container
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.services .container .serviceBx
+{
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .container .serviceBx img
+{
+  max-width: 250px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.services .container .serviceBx h2
+{
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+.technology
+{
+  background: #3f8ffc;
+  width: 100%;
+  padding: 100px;
+  padding-top: 300px;
+  margin-top: -300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.technology .contentBx
+{
+  max-width: 800px;
+}
+
+.technology .imgBx
+{
+  max-width: 250px;
+}
+
+.technology .imgBx img
+{
+  max-width: 100%;
+}
+
+.client
+{
+  background: #162c3b;
+  padding: 100px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.client .imgBx
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.client .imgBx img
+{
+  max-width: 200px;
+  margin: 20px;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.client .imgBx img:hover
+{
+  opacity: 1;
+}
+
+.testimonials
+{
+    position: relative;
+    padding: 100px;
+    background: #12222d;
+    text-align: center;
+}
+
+.testimonials .container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonials .container .contentBx
+{
+  background: #fff;
+  padding: 60px 50px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.testimonials .container .contentBx p
+{
+  font-style: italic;
+}
+
+.testimonials .container .contentBx h3
+{
+  width: 100%;
+  text-align: end;
+  font-weight: 500;
+  color: #3f8ffc;
+}
+
+.contact
+{
+  padding: 100px;
+  background: #162c3b;
+  text-align: center;
+  color: #ffffff;
+}
+
+.imgBx2
+{
+  background: url(form.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+.bluebg
+{
+  background: url(blue.jpg) !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.form .inputBx
+{
+  margin-bottom: 40px;
+}
+
+.form .inputBx input
+{
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.form .inputBx input::placeholder
+{
+    color: #fff;
+}
+
+.form .inputBx textarea
+{
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  min-height: 150px;
+  border-bottom: 2px solid #fff;
+}
+
+.form .inputBx textarea::placeholder
+{
+  color: #fff;
+}
+
+.form .inputBx input[type="submit"]
+{
+  width: 150px;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  font-weight: 400px;
+}
+
+.footer
+{
+  background: #162c3b;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul li
+{
+  list-style: none;
+}
+
+.footer ul li a
+{
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer ul li a img
+{
+  filter: invert(1);
+  max-width: 20px;
+}
+
+
+
+
+/* calendar */
+.calendar ul 
+{
+    list-style-type: none;
+}
+
+/* Month header */
+.month {
+  padding: 40px 20px;
+  width: 100%;
+  background: #162c3b;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  padding: 10px;
+  background-color:#ddd;
+  
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 12%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px;
+  background: #eee;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #3f8ffc;
+  color: white !important
+}
+
+
+
+
+@media (max-width: 991px)
+{
+  .banner
+  {
+    padding: 50px;
+    
+  }
+  .banner header
+  {
+    padding: 20px 50px;
+    flex-wrap: wrap;
+  }
+  .banner .content h2
+  {
+    font-size: 36px;
+  }
+  .banner .content p
+  {
+    font-size: 16px;
+  }
+  .banner header .search-box
+  {
+    margin-top: 20px;
+  }
+  .banner header .toggle
+  {
+    width: 0px;
+    height: 0px;
+  }
+  .about
+  {
+    flex-direction: column;
+  }
+  .about .contentBx,
+  .about .imgBx
+  {
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+    text-align: center;
+  }
+  .services
+  {
+    padding: 50px;
+  }
+  .services .container
+  {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .services .container .serviceBx
+  {
+    margin: 20px;
+    width: 300px;
+    height: 100%;
+    flex-wrap: wrap;
+    
+  }
+  .technology
+  {
+    padding: 50px;
+    padding-top: 300px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .technology .imgBx
+  {
+    margin-top: 40px;
+    max-width: 250px;
+  }
+  .client
+  {
+    padding: 50px;
+  }
+  .client .imgBx
+  {
+    justify-content: center;
+  }
+  .textimonials
+  {
+    padding: 50px;
+  }
+  .textimonials .contextBx
+  {
+    padding: 60px 40px;
+    max-width: 550px;
+    margin-bottom: 40px;
+  }
+  .textimonials .contextBx:last-child
+  {
+    margin-bottom: 0px;
+  }
+  .contact
+  {
+    padding: 50px;
+  }
+  .footer
+  {
+    padding: 20px 50px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .footer ul
+  {
+    margin-bottom: 20px;
+  }
+}
